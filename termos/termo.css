@@ -1,0 +1,98 @@
+/* Estilo base para documentos da CIBRATEC */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    color: #003366;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 8px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li, ol li {
+    margin-bottom: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e6f0ff;
+    font-weight: bold;
+}
+
+strong {
+    color: #000;
+}
+
+footer, small {
+    font-size: 14px;
+    color: #666;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Quebra de página para impressão (caso precise imprimir PDFs) */
+.page-break {
+    page-break-before: always;
+}
+
+/* Responsivo básico */
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
