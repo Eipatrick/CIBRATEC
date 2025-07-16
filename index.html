@@ -3,187 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CIBRATEC - Empresa especializada em segurança cibernética e proteção de dados">
     <title>CIBRATEC - Documento Inicial</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1 class = "principal_title">Projeto Autônomo: Empresa de Segurança Cibernética</h1>
+<header>
+    <h1 class="principal_title">Projeto Autônomo: Empresa de Segurança Cibernética</h1>
+</header>
 
 <div class="nav-container">
-  <!-- Navegação principal -->
-  <nav class="navigation main-nav">
-    <a href="index.html">🏠 Início</a>
-    <a href="sobre_patrick.html">📄 Currículo</a>
-  </nav>
+    <!-- Navegação principal -->
+    <nav class="navigation main-nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">🏠 Início</a>
+        <a href="sobre_patrick.html">📄 Currículo</a>
 
-  <hr>
+        <!-- Menu suspenso: Legislação -->
+        <div class="dropdown">
+            <button class="dropbtn" aria-expanded="false" aria-controls="legislacao-dropdown">📚 Legislação ▾</button>
+            <div class="dropdown-content" id="legislacao-dropdown">
+                <a href="./legislacao/legislacao.html">📘 Visão Geral</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm">🌐 Marco Civil da Internet</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">🔐 LGPD</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12737.htm">🛡️ Lei Carolina Dieckmann</a>
+                <a href="https://www.planalto.gov.br/ccivil_03/Leis/L9609.htm">💻 Lei de Software</a>
+            </div>
+        </div>
 
-  <!-- Título da seção -->
-  <h2 class="nav-title">📚 Documentos de Segurança da Informação</h2>
+        <!-- Menu suspenso: Termos -->
+        <div class="dropdown">
+            <button class="dropbtn" aria-expanded="false" aria-controls="termos-dropdown">📄 Termos ▾</button>
+            <div class="dropdown-content" id="termos-dropdown">
+                <a href="./termos/termo_SI.html">📘 Política de Segurança da Informação</a>
+                <a href="./termos/termo_resposta_incidentes.html">🚨 Plano de Resposta a Incidentes</a>
+                <a href="./termos/termo_usuario.html">👤 Termo de Responsabilidade do Usuário</a>
+                <a href="./termos/termo_backup.html">💾 Política de Backup</a>
+                <a href="./termos/termo_acesso.html">🔐 Controle de Acesso</a>
+                <a href="./termos/termo_mudancas.html">🔄 Gestão de Mudanças</a>
+            </div>
+        </div>
+    </nav>
 
-  <!-- Documentos de política -->
-  <nav class="navigation doc-nav">
-    <a href="./termos/termo_SI.html">📘 Política de Segurança da Informação (PSI)</a>
-    <a href="./termos/termo_resposta_incidentes.html">🚨 Plano de Resposta a Incidentes (PRI)</a>
-    <a href="./termos/termo_usuario.html">👤 Termo de Responsabilidade do Usuário</a>
-    <a href="./termos/termo_backup.html">💾 Política de Backup</a>
-    <a href="./termos/termo_acesso.html">🔐 Política de Controle de Acesso</a>
-    <a href="./termos/termo_mudancas.html">🔄 Gestão de Mudanças</a>
-  </nav>
 </div>
 
+<main>
+    <article>
+        <h2>1. Identidade Organizacional</h2>
+        
+        <section>
+            <p><strong>Nome da Empresa:</strong> Companhia Brasileira de Tecnologia em Defesa Cibernética Ltda (CIBRATEC).</p>
+            
+            <p><strong>Missão:</strong></p>
+            <p>Proteger os ativos digitais de nossos clientes com soluções robustas de segurança cibernética, garantindo confidencialidade, integridade e disponibilidade da informação, em conformidade com as melhores práticas e normas internacionais.</p>
+            
+            <p><strong>Visão:</strong></p>
+            <p>Ser referência em segurança da informação no Brasil e na América Latina, pioneira em soluções para ambientes imersivos e descentralizados como o metaverso.</p>
+            
+            <p><strong>Valores:</strong></p>
+            <ul>
+                <li>Confiança e Transparência</li>
+                <li>Inovação com Responsabilidade</li>
+                <li>Conformidade e Ética</li>
+                <li>Resposta Rápida e Precisa</li>
+                <li>Educação Contínua em Segurança</li>
+                <li>Respeito à Privacidade</li>
+            </ul>
+        </section>
+    </article>
 
+    <div class="page-break"></div>
 
+    <article>
+        <h2>2. Estrutura Modular de Serviços</h2>
+        
+        <section>
+            <p><em>Proteção por Camada (Modelo OSI)</em></p>
+            
+            <div class="table-container">
+                <table>
+                    <caption>Serviços por camada OSI</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Camada</th>
+                            <th scope="col">Soluções Oferecidas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Física</td>
+                            <td>Auditoria física, segmentação de redes, controle de acesso físico.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Enlace</td>
+                            <td>Monitoramento de pacotes, mitigação de sniffing e spoofing.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Rede</td>
+                            <td>Firewalls de próxima geração, VPNs seguras, roteamento seguro.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Transporte</td>
+                            <td>Monitoramento de tráfego, hardening de protocolos (TLS, TCP).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sessão</td>
+                            <td>Gerenciamento de sessões e autenticação segura.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Apresentação</td>
+                            <td>Serviços de criptografia, compressão e ofuscação de dados.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Aplicação</td>
+                            <td>DevSecOps, análise de vulnerabilidades, WAF, proteção de APIs.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
 
-<h2>1. Identidade Organizacional </h2>
+    <article>
+        <h2>3. Áreas de Atuação Estratégica</h2>
+        <p class="note">Em estudo sobre qual será o foco da empresa.</p>
+        
+        <section>
+            <ol>
+                <li><strong>Consultoria e Auditoria em Segurança</strong>
+                    <ol type="a">
+                        <li>Diagnóstico de maturidade em Segurança da Informação.</li>
+                        <li>Conformidade com a família ISO 27000, Lei Geral de Proteção de Dados, entre outras.</li>
+                    </ol>
+                </li>
+                <li><strong>Desenvolvimento de Software Seguro</strong>
+                    <ol type="a">
+                        <li>Ferramentas próprias em linguagens compiladas.</li>
+                        <li>Scripts de automação para hardening e pentest.</li>
+                    </ol>
+                </li>
+                <li><strong>Monitoramento Contínuo (SOC)</strong>
+                    <ol type="a">
+                        <li>Detecção e resposta a ameaças 24/7.</li>
+                        <li>Análise de logs e eventos de segurança.</li>
+                    </ol>
+                </li>
+                <li><strong>Gestão e Governança</strong>
+                    <ol type="a">
+                        <li>Planos de Gestão de Incidentes, Riscos, Crise, Continuidade, entre mais.</li>
+                        <li>SGSI (Sistema de Gestão da Segurança da Informação)</li>
+                    </ol>
+                </li>
+                <li><strong>Pesquisa em Metaverso Seguro</strong>
+                    <ol type="a">
+                        <li>Testes de ambientes Web3, XR, blockchain.</li>
+                        <li>Protocolos de autenticação descentralizada (SSI).</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+    </article>
 
-<p><strong>Nome da Empresa:</strong> Companhia Brasileira de Tecnologia em Defesa Cibernética Ltda (CIBRATEC).</p>
+    <div class="page-break"></div>
 
-<p><strong>Missão:</strong></p>
-<p>Proteger os ativos digitais de nossos clientes com soluções robustas de segurança cibernética, garantindo confidencialidade, integridade e disponibilidade da informação, em conformidade com as melhores práticas e normas internacionais.</p>
+    <article>
+        <h2>4. Planos da Fase 1 (Protótipos)</h2>
+        
+        <section>
+            <div class="table-container">
+                <table>
+                    <caption>Documentos e protótipos planejados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Documento / Protótipo</th>
+                            <th scope="col">Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Política de Segurança da Informação (PSI)</td>
+                            <td>Documento-mestre que orienta condutas, responsabilidades e escopo.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Protótipo de Gestão de Incidentes</td>
+                            <td>Fluxograma com etapas de identificação, contenção, erradicação, recuperação e lições aprendidas.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Plano de Gestão de Riscos</td>
+                            <td>Matriz de riscos com classificação, impacto, medidas de controle.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Protótipo de Governança de Segurança</td>
+                            <td>Estrutura com papéis e responsabilidades (ex: CISO, analistas, auditores).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Modelo de Linguagem Segura</td>
+                            <td>Escolha de linguagens compiladas e justificativas (ex: Rust para segurança de memória).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Diário de Progresso</td>
+                            <td>Blog ou documento versionado com registros semanais de avanços e aprendizados.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
 
-<p><strong>Visão:</strong></p>
-<p>Ser referência em segurança da informação no Brasil e na América Latina, pioneira em soluções para ambientes imersivos e descentralizados como o metaverso.</p>
+    <article>
+        <h2>5. Próximos Passos Imediatos</h2>
+        
+        <section>
+            <ol>
+                <li>Criar o esqueleto da PSI – Política de Segurança da Informação.</li>
+                <li>Desenhar o fluxo de resposta a incidentes com base na norma ISO 27035.</li>
+                <li>Desenvolver um protótipo básico em Rust para um serviço seguro simples (ex: criptografia de arquivos).</li>
+                <li>Elaborar o Diário de Progresso para registrar cada fase de desenvolvimento (recomendo GitHub Pages ou Notion).</li>
+            </ol>
+        </section>
+    </article>
+</main>
 
-<p><strong>Valores:</strong></p>
-<ul>
-    <li>Confiança e Transparência</li>
-    <li>Inovação com Responsabilidade</li>
-    <li>Conformidade e Ética</li>
-    <li>Resposta Rápida e Precisa</li>
-    <li>Educação Contínua em Segurança</li>
-    <li>Respeito à Privacidade</li>
-</ul>
+<nav class="page-navigation">
+    <button class="btn-voltar" onclick="history.back()">← Voltar</button>
+    <button class="btn-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" title="Voltar ao topo">↑ Topo</button>
+</nav>
 
-<div class="page-break"></div>
-
-<h2>2. Estrutura Modular de Serviços</h2>
-
-<p><em>Proteção por Camada (Modelo OSI)</em></p>
-
-<table>
-    <tr>
-        <th>Camada</th>
-        <th>Soluções Oferecidas</th>
-    </tr>
-    <tr>
-        <td>Física</td>
-        <td>Auditoria física, segmentação de redes, controle de acesso físico.</td>
-    </tr>
-    <tr>
-        <td>Enlace</td>
-        <td>Monitoramento de pacotes, mitigação de sniffing e spoofing.</td>
-    </tr>
-    <tr>
-        <td>Rede</td>
-        <td>Firewalls de próxima geração, VPNs seguras, roteamento seguro.</td>
-    </tr>
-    <tr>
-        <td>Transporte</td>
-        <td>Monitoramento de tráfego, hardening de protocolos (TLS, TCP).</td>
-    </tr>
-    <tr>
-        <td>Sessão</td>
-        <td>Gerenciamento de sessões e autenticação segura.</td>
-    </tr>
-    <tr>
-        <td>Apresentação</td>
-        <td>Serviços de criptografia, compressão e ofuscação de dados.</td>
-    </tr>
-    <tr>
-        <td>Aplicação</td>
-        <td>DevSecOps, análise de vulnerabilidades, WAF, proteção de APIs.</td>
-    </tr>
-</table>
-
-<h2>3. Áreas de Atuação Estratégica</h2>
-<h4>Em estudo sobre qual será o foco da empresa.</h4>
-
-<ol>
-    <li><strong>Consultoria e Auditoria em Segurança</strong>
-        <ol type="a">
-            <li>Diagnóstico de maturidade em Segurança da Informação.</li>
-            <li>Conformidade com a família ISO 27000, Lei Geral de Proteção de Dados, entre outras.</li>
-        </ol>
-    </li>
-    <li><strong>Desenvolvimento de Software Seguro</strong>
-        <ol type="a">
-            <li>Ferramentas próprias em linguagens compiladas.</li>
-            <li>Scripts de automação para hardening e pentest.</li>
-        </ol>
-    </li>
-    <li><strong>Monitoramento Contínuo (SOC)</strong>
-        <ol type="a">
-            <li>Detecção e resposta a ameaças 24/7.</li>
-            <li>Análise de logs e eventos de segurança.</li>
-        </ol>
-    </li>
-    <li><strong>Gestão e Governança</strong>
-        <ol type="a">
-            <li>Planos de Gestão de Incidentes, Riscos, Crise, Continuidade, entre mais.</li>
-            <li>SGSI (Sistema de Gestão da Segurança da Informação)</li>
-        </ol>
-    </li>
-    <li><strong>Pesquisa em Metaverso Seguro</strong>
-        <ol type="a">
-            <li>Testes de ambientes Web3, XR, blockchain.</li>
-            <li>Protocolos de autenticação descentralizada (SSI).</li>
-        </ol>
-    </li>
-</ol>
-
-<div class="page-break"></div>
-
-<h2>4. Planos da Fase 1 (Protótipos)</h2>
-
-<table>
-    <tr>
-        <th>Documento / Protótipo</th>
-        <th>Descrição</th>
-    </tr>
-    <tr>
-        <td>Política de Segurança da Informação (PSI)</td>
-        <td>Documento-mestre que orienta condutas, responsabilidades e escopo.</td>
-    </tr>
-    <tr>
-        <td>Protótipo de Gestão de Incidentes</td>
-        <td>Fluxograma com etapas de identificação, contenção, erradicação, recuperação e lições aprendidas.</td>
-    </tr>
-    <tr>
-        <td>Plano de Gestão de Riscos</td>
-        <td>Matriz de riscos com classificação, impacto, medidas de controle.</td>
-    </tr>
-    <tr>
-        <td>Protótipo de Governança de Segurança</td>
-        <td>Estrutura com papéis e responsabilidades (ex: CISO, analistas, auditores).</td>
-    </tr>
-    <tr>
-        <td>Modelo de Linguagem Segura</td>
-        <td>Escolha de linguagens compiladas e justificativas (ex: Rust para segurança de memória).</td>
-    </tr>
-    <tr>
-        <td>Diário de Progresso</td>
-        <td>Blog ou documento versionado com registros semanais de avanços e aprendizados.</td>
-    </tr>
-</table>
-
-<h2>5. Próximos Passos Imediatos</h2>
-
-<ol>
-    <li>Criar o esqueleto da PSI – Política de Segurança da Informação.</li>
-    <li>Desenhar o fluxo de resposta a incidentes com base na norma ISO 27035.</li>
-    <li>Desenvolver um protótipo básico em Rust para um serviço seguro simples (ex: criptografia de arquivos).</li>
-    <li>Elaborar o Diário de Progresso para registrar cada fase de desenvolvimento (recomendo GitHub Pages ou Notion).</li>
-</ol>
-
-<button class="btn-voltar" onclick="history.back()">← Voltar</button>
-<button class="btn-topo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" title="Voltar ao topo">↑ Topo</button>
 <footer>
-    <p>© 2023 CIBRATEC - Companhia Brasileira de Tecnologia em Defesa Cibernética Ltda</p>
+    <p>© <span id="current-year">2023</span> CIBRATEC - Companhia Brasileira de Tecnologia em Defesa Cibernética Ltda</p>
     <p>Paulo Patrick Rodrigues da Silva</p>
 </footer>
 
+<script>
+    // Atualiza o ano do copyright dinamicamente
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Melhoria de acessibilidade para dropdowns
+    document.querySelectorAll('.dropbtn').forEach(button => {
+        button.addEventListener('click', function() {
+            const expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', !expanded);
+        });
+    });
+</script>
 
 </body>
 </html>
